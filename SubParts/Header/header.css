@@ -1,0 +1,28 @@
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: row;
+    
+}
+.clickable-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.clickable-div:hover {
+    background-color: #e0e0e0;
+}
+.icon {
+    margin-right: 10px;
+}
