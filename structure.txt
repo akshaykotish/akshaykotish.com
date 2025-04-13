@@ -1,0 +1,60 @@
+blog-app/
+│
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   └── robots.txt
+│
+├── src/
+│   ├── components/
+│   │   ├── BlogCard.jsx                   # Blog preview card
+│   │   ├── BlogDetail.jsx                 # Full blog post view
+│   │   ├── BlogForm.jsx                   # Form for creating/editing blogs
+│   │   ├── Footer.jsx                     # Site footer
+│   │   ├── Layout.jsx                     # Main layout wrapper
+│   │   ├── LoadingSpinner.jsx             # Loading indicator
+│   │   ├── Navbar.jsx                     # Navigation bar
+│   │   └── PrivateRoute.jsx               # Authentication route guard
+│   │
+│   ├── contexts/
+│   │   └── AuthContext.jsx                # Authentication context provider
+│   │
+│   ├── firebase/
+│   │   └── config.js                      # Firebase configuration and initialization
+│   │
+│   ├── models/
+│   │   └── blogModel.js                   # Blog data operations
+│   │
+│   ├── pages/
+│   │   ├── Auth/
+│   │   │   ├── ForgotPassword.jsx         # Password reset page
+│   │   │   ├── Login.jsx                  # Login page
+│   │   │   ├── Signup.jsx                 # Registration page
+│   │   │   └── index.js                   # Export auth pages
+│   │   │
+│   │   ├── Blog/
+│   │   │   ├── BlogEditor.jsx             # Create/edit blog page
+│   │   │   ├── BlogView.jsx               # Single blog view
+│   │   │   ├── Dashboard.jsx              # User's blog management 
+│   │   │   ├── Home.jsx                   # Blog listing page
+│   │   │   └── index.js                   # Export blog pages
+│   │   │
+│   │   └── NotFound.jsx                   # 404 page
+│   │
+│   ├── utils/
+│   │   ├── dateUtils.js                   # Date formatting helpers
+│   │   └── validation.js                  # Form validation functions
+│   │
+│   ├── App.jsx                            # Main app component with routes
+│   ├── index.css                          # Global styles (Tailwind imports)
+│   └── index.jsx                          # App entry point
+│
+├── .env                                   # Environment variables (not in repo)
+├── .env.example                           # Example environment variables
+├── .firebaserc                            # Firebase project configuration
+├── firebase.json                          # Firebase hosting configuration 
+├── firestore.rules                        # Firestore security rules
+├── storage.rules                          # Firebase Storage security rules
+├── package.json                           # Project dependencies
+├── tailwind.config.js                     # Tailwind CSS configuration
+└── README.md                              # Project documentation
